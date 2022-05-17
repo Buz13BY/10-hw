@@ -2,10 +2,6 @@
 	box-sizing: border-box;
 }
 
-html {
-	font-family: Montserrat;
-}
-
 @font-face {
 	font-family: 'Montserrat';
 	src: url('/fonts/Montserrat-Regular.woff2') format('woff2'), url('/fonts/Montserrat-Regular.woff') format('woff');
@@ -34,6 +30,10 @@ html {
 	font-style: normal;
 }
 
+html {
+	font-family: Montserrat;
+}
+
 a {
 	text-decoration: none;
 	cursor: pointer;
@@ -45,10 +45,11 @@ ul {
 	padding: 0;
 }
 
-p {
+p, h1, h2, h3  {
 	margin: 0;
 	padding: 0;
 }
+
 
 .btn {
 	display: inline-block;
@@ -58,4 +59,10 @@ p {
 	border: none;
 	color: #FFFFFF;
 
+}
+
+.section-header {
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 1;
 }
