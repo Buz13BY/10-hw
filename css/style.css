@@ -31,7 +31,7 @@
 }
 
 html {
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;;
 	background-color: #E5E5E5;
 }
 
@@ -75,3 +75,31 @@ ul {
 	line-height: 1;
 }
 
+/* faq */
+
+.section-faq__item {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* footer */
+
+.footer {
+	display: flex;
+	background-color: #222222;
+	justify-content: space-between;
+}
+
+.footer__header {
+	color: #CACACA;
+}
+
+.footer__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__checkbox {
+	display: inline-block;
+	color: #CACACA;
+}
