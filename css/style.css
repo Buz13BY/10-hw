@@ -268,6 +268,66 @@ ul {
 	line-height: 2;
 }
 
+/* how we work */
+
+.section-how-we-work {
+	margin-top: 100px;
+}
+
+.section-how-we-work__steps {
+	margin-top: 50px;
+
+}
+
+.step {
+	font-size: 18px;
+	line-height: 1;
+	color: #333333;
+}
+
+.step:not(:last-child){
+	margin-right: 50px;
+}
+
+.step:active {
+	color: #E1670E;
+}
+
+.how-we-work__card-text {
+	width: 758px;
+	height: 320px;
+	margin-top: 8px;
+}
+
+.section-how-we-work__bottom {
+	margin-top: 45px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.section-how-we-work__btn {
+	width: 175px;
+	height: 60px;
+	margin-top: 50px;
+	margin-right: 32px;
+}
+
+.section-how-we-work_contract-btn {
+	width: 147px;
+	height: 60px;
+	border: 1px solid #333333;
+	color: #333333;
+	background-color: transparent;
+}
+
+.section-how-we-work__bottom_right {
+	width: 870px;
+	height: 460px;
+	background-size: 100% 100%;
+	background-image: url(../img/how-we-work/Rectangle-18.jpg);
+}
+
+
 /* faq */
 
 .section-faq__item {
