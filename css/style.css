@@ -87,8 +87,15 @@ ul {
 
 .width-body {
 	margin: 0 auto;
-	width:1770px;
+	max-width:1770px;
 }
+
+.card-text {
+	font-weight: 400;
+	font-size: 16px;
+}
+
+/* header */
 
 .header {
 	display: flex;
@@ -99,12 +106,18 @@ ul {
 	box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
 }
 
+.burger {
+	display: none;
+}
+
 .header-left {
 	margin-left: 75px;
 }
 
 .header-right {
-	margin-right: 77px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .header-nav {
@@ -123,9 +136,16 @@ ul {
 	margin-right: 75px;
 }
 
-.card-text {
-	font-weight: 400;
-	font-size: 16px;
+.header__search {
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/header/search.svg);
+	background-color: transparent;
+	border: none;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	margin-left: 85px;
+	margin-right: 77px;
 }
 
 
@@ -138,7 +158,7 @@ ul {
 }
 
 .section-hero__heading {
-	width: 917px;
+	max-width: 917px;
 	height: 270px;
 	color: #FFFFFF;
 	font-size: 70px;
@@ -149,8 +169,8 @@ ul {
 }
 
 .section-hero__description {
-	width: 880px;
-	height: 58px;
+	max-width: 880px;
+	min-height: 58px;
 	padding-left: 80px;
 	margin-top: 24px;
 	color: #FFFFFF;
@@ -173,7 +193,7 @@ ul {
 }
 
 .section-about-us_card-text {
-	width: 1235px;
+	max-width: 1235px;
 	height: 192px;
 	font-weight: 400;
 	font-size: 16px;
@@ -254,7 +274,7 @@ ul {
 }
 
 .section-about-us__card_content {
-	width: 450px;
+	max-width: 450px;
 	height: 165px;
 }
 
@@ -294,7 +314,7 @@ ul {
 }
 
 .how-we-work__card-text {
-	width: 758px;
+	max-width: 758px;
 	height: 320px;
 	margin-top: 8px;
 }
@@ -306,14 +326,14 @@ ul {
 }
 
 .section-how-we-work__btn {
-	width: 175px;
+	max-width: 175px;
 	height: 60px;
 	margin-top: 50px;
 	margin-right: 32px;
 }
 
 .section-how-we-work_contract-btn {
-	width: 147px;
+	max-width: 147px;
 	height: 60px;
 	border: 1px solid #333333;
 	color: #333333;
@@ -412,7 +432,7 @@ ul {
 }
 
 .footer__form_item {
-	width: 570px;
+	max-width: 570px;
 	height: 60px;
 	color: #CACACA;
 	background-color: #414141;
@@ -425,7 +445,7 @@ ul {
 }
 
 .footer__form_text{
-	width: 570px;
+	max-width: 570px;
 	height: 150px;
 	margin-bottom: 32px;
 	padding-top: 14px;
@@ -433,7 +453,7 @@ ul {
 
 .footer__btn {
 	margin-right: 22px;
-	width: 269px;
+	max-width: 269px;
 	height: 58px;
 }
 
@@ -445,10 +465,63 @@ ul {
 .footer-right {
 	margin-top: 137px;
 	margin-right: 75px;
-	width: 363px;
+	max-width: 363px;
 	height: 320px;
 	color: #CACACA;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 2;
+}
+
+@media (max-width: 1024px) {
+
+	.width-body {
+		max-width: 924px;
+	}
+
+	.container {
+		max-width: 1024px;
+		max-height: 100px;
+	}
+
+	.header {
+		justify-content: space-between;
+	}
+
+	.burger {
+		margin-left: 50px;
+		display: block;
+		width: 25px;
+		height: 25px;
+		background-image: url(../img/header/burger.svg);
+		background-color: transparent;
+		border: none;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+
+	.header-logo {
+		width: 150px;
+		height: 48px;
+	}
+
+	.header-nav {
+		display: none;
+	}
+
+	.header__search {
+		margin-right: 52px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+@media (max-width: 320px) {
+	.container {
+		max-width: 320px;
+	}
 }
