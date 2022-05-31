@@ -34,13 +34,12 @@
 html, body {
 	font-family: Montserrat, sans-serif;
 	color:#333333;
-	background-color: #FFFFFF;
+	background-color: #E5E5E5;
 	height: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
 }
 
-body {
-	min-width: 1770px;
-}
 
 a {
 	text-decoration: none;
@@ -86,8 +85,13 @@ ul {
 }
 
 .container {
-	max-width: 1920px;
+	max-width: 1770px;
 	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+
+
+.width-body {
 	margin: 0 75px;
 }
  
@@ -100,12 +104,7 @@ ul {
 /* header */
 
 .header {
-	position: absolute;
-	left: 0;
-	top: 0;
-	min-width: 1920px;
-	margin-left: 0;
-	padding-left: 75px;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	min-height: 100px;
@@ -121,6 +120,10 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.header-logo {
+	padding-left: 75px;
 }
 
 .header-nav {
@@ -155,15 +158,15 @@ ul {
 /* hero */
 
 .section-hero {
-	margin-top: 100px;
-	height: 620px;
+	max-width: 1770px;
+	max-height: 620px;
 	background-image: url(../img/hero/low-angle-photo-of-balconies-2462015\ 1.jpg);
 	background-repeat: no-repeat;
 }
 
 .section-hero__heading {
 	max-width: 917px;
-	height: 270px;
+	max-height: 270px;
 	color: #FFFFFF;
 	font-size: 70px;
 	font-weight: 800;
@@ -174,7 +177,7 @@ ul {
 
 .section-hero__description {
 	max-width: 880px;
-	min-height: 58px;
+	max-height: 58px;
 	padding-left: 80px;
 	margin-top: 24px;
 	color: #FFFFFF;
@@ -184,8 +187,7 @@ ul {
 }
 
 .section-hero__btn {
-	margin-top: 90px;
-	margin-left: 80px;
+	margin: 90px 0px 100px 80px;
 	font-size: 23.46px;
 	font-weight: 700;
 }
@@ -212,7 +214,7 @@ ul {
 }
 
 .section-about-us__bottom_left {
-	width: 49%;
+	width:49%;
 	height: 100%;
 	position: relative;
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.31) 100%), url(../img/about-us/left/builder.jpg);
@@ -477,19 +479,27 @@ ul {
 	line-height: 2;
 }
 
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
 
-	.width-body {
-		max-width: 924px;
+	html, body {
+		background-color: #FFFFFF;
 	}
 
 	.container {
 		max-width: 1024px;
-		max-height: 100px;
 	}
 
+	.width-body {
+		max-width: 924px;
+		margin: 0 50px;
+	}
+
+/* header */
+
 	.header {
+		margin: 0 auto;
 		justify-content: space-between;
+		max-width: 100%;
 	}
 
 	.burger {
@@ -504,11 +514,6 @@ ul {
 		cursor: pointer;
 	}
 
-	.header-logo {
-		width: 150px;
-		height: 48px;
-	}
-
 	.header-nav {
 		display: none;
 	}
@@ -516,6 +521,27 @@ ul {
 	.header__search {
 		margin-right: 52px;
 	}
+
+	/* hero */
+	.section-hero__heading {
+		padding-top: 160px;
+		padding-left: 0;
+		margin:0 auto;
+		max-width: 770px;
+		min-height: 306px;
+		font-size: 60px;
+		line-height: 73px;
+	}
+
+	.section-hero__description {
+		max-width: 770px;
+		max-height: 48px;
+		padding: 0;
+		margin-top: 16px;
+		margin: 0 auto;
+		font-size: 20px;
+	}
+
 }
 
 @media (max-width: 768px) {
@@ -528,4 +554,4 @@ ul {
 	.container {
 		max-width: 320px;
 	}
-} */
+}
