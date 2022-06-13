@@ -131,6 +131,21 @@ ul {
 	color: #333333;
 }
 
+.header-nav__link:hover {
+	border-bottom: 2px solid #FF9900;
+}
+
+.header-nav__link:focus {
+	padding: 2px;
+	outline: 2px solid #FF9900;
+}
+
+.header-nav__link:active {
+	outline: none;
+	color: #FF9900;
+	border-bottom: 2px solid #FF9900;
+}
+
 .header-nav__item:not(:last-child) {
 	margin-right: 85px;
 }
