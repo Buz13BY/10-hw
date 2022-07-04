@@ -65,7 +65,19 @@ p, h1, h2, h3  {
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 1;
+	transition: background-color, 0.5s;
+}
 
+.btn:hover {
+	background-color: #FF9900B2;
+}
+
+.btn:focus {
+	background-color: #FF9900B2;
+}
+
+.btn:active {
+	background-color: #E1670E;
 }
 
 ul {
@@ -131,16 +143,16 @@ ul {
 	color: #333333;
 }
 
-.header-nav__link:hover {
+.header-nav__link:hover, .step:hover {
 	border-bottom: 2px solid #FF9900;
 }
 
-.header-nav__link:focus {
+.header-nav__link:focus, .step:focus {
 	padding: 2px;
 	outline: 2px solid #FF9900;
 }
 
-.header-nav__link:active {
+.header-nav__link:active, .step:active {
 	outline: none;
 	color: #FF9900;
 	border-bottom: 2px solid #FF9900;
@@ -370,6 +382,19 @@ ul {
 	border: 1px solid #333333;
 	color: #333333;
 	background-color: transparent;
+	transition: background-color, 0.5s;
+}
+
+.section-how-we-work_contract-btn:hover {
+	background-color: #666666;
+}
+
+.section-how-we-work_contract-btn:focus {
+	background-color: #666666;
+}
+
+.section-how-we-work_contract-btn:active {
+	background-color: #000000;
 }
 
 .section-how-we-work__bottom_right {
@@ -398,9 +423,30 @@ ul {
 	justify-content: space-between;
 	align-items: center;
 	border-top: 1px solid #CACACA;
+	transition: all, 0.5s;
+}
+
+.section-faq__item:hover, .section-faq__item:focus {
+	border-top: 1px solid #FF9900;
+	border-bottom: 1px solid #FF9900;
+	color: #FF9900;
+}
+
+.section-faq__item:active {
+	border-top: 1px solid #CACACA;
+	color: #333333;
 }
 
 .section-faq__item:last-child{
+	border-bottom: 1px solid #CACACA;
+	transition: all, 0.5s;
+}
+
+.section-faq__item:last-child:hover, .section-faq__item:last-child:focus{
+	border-bottom: 1px solid #FF9900;
+}
+
+.section-faq__item:last-child:active {
 	border-bottom: 1px solid #CACACA;
 }
 
