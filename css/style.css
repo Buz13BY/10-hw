@@ -564,25 +564,22 @@ ul {
 
 @media (max-width: 1024px) {
 
-	html, body {
-		background-color: #FFFFFF;
-	}
-
 	.container {
-		max-width: 1024px;
+		width: 100%;
+		margin: 0 auto;
 	}
 
-	.width-body {
+	/* .width-body {
 		max-width: 924px;
 		margin: 0 50px;
-	}
+	} */
 
 /* header */
 
 	.header {
 		margin: 0 auto;
 		justify-content: space-between;
-		max-width: 100%;
+		width: 1024px;
 	}
 
 	.burger {
@@ -606,11 +603,16 @@ ul {
 	}
 
 	/* hero */
-	.section-hero__heading {
+
+	.section-hero {
+		width:100%;
+	}
+
+	/* .section-hero__heading {
 		padding-top: 160px;
 		padding-left: 0;
 		margin:0 auto;
-		max-width: 770px;
+		width: 100%;
 		min-height: 306px;
 		font-size: 60px;
 		line-height: 73px;
@@ -623,7 +625,7 @@ ul {
 		margin-top: 16px;
 		margin: 0 auto;
 		font-size: 20px;
-	}
+	} */
 
 }
 
