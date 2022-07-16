@@ -93,9 +93,9 @@ ul {
 }
 
 .container {
-	max-width: 1920px;
-	margin: 0 auto;
-	padding: 0px 75px 0px 75px;
+	width: 100%;
+	padding-left: 75px;
+	padding-right: 75px;
 	background-color: #FFFFFF;
 }
 
@@ -112,16 +112,15 @@ ul {
 /* header */
 
 .header {
-	width: 1920px;
-	position: relative;
-	left: -75px;
-	display: flex;
-	justify-content: space-between;
+	width: 100%;
 	min-height: 100px;
-	margin: 0 auto;
-	align-items: center;
 	box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
 }
+
 
 .burger {
 	display: none;
@@ -184,8 +183,8 @@ ul {
 /* hero */
 
 .section-hero {
-	max-width: 1780px;
 	max-height: 620px;
+	margin: 0 auto;
 	background-image: url(../img/hero/low-angle-photo-of-balconies-2462015\ 1.jpg);
 	background-repeat: no-repeat;
 }
@@ -226,7 +225,7 @@ ul {
 
 .section-about-us_card-text {
 	margin-top: 20px;
-	max-width: 1235px;
+	width: 1235px;
 	height: 192px;
 	font-weight: 400;
 	font-size: 16px;
@@ -465,17 +464,16 @@ ul {
 /* footer */
 
 .footer {
-	width: 1920px;
-	position: relative;
-	left: -75px;
+	width: 100%;
 	margin-top: 105px;
 	display: flex;
+	justify-content: space-between;
 	background-color: #222222;
 	}
 
 .footer-left {
-	margin-top: 50px;
-	margin-left: 75px;
+	padding-top: 50px;
+	padding-left: 75px;
 }
 
 .footer-left__list {
@@ -507,8 +505,9 @@ ul {
 }
 
 .footer-center {
-	width: 570px;
-	margin: 50px 232px 0px 340px;
+	width: 33%;
+	padding-top: 50px;
+	/* margin: 50px 232px 0px 340px; */
 }
 
 .footer__form {
@@ -552,8 +551,8 @@ ul {
 }
 
 .footer-right {
-	margin-top: 137px;
-	margin-right: 75px;
+	padding-top: 137px;
+	padding-right: 75px;
 	max-width: 363px;
 	height: 320px;
 	color: #CACACA;
