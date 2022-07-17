@@ -236,13 +236,13 @@ ul {
 .section-about-us__bottom {
 	display: flex;
 	margin-top: 50px;
-	height: 622px;
+	min-height: 622px;
 	justify-content: space-between;
 }
 
 .section-about-us__bottom_left {
 	width:49%;
-	height: 100%;
+	min-height: 100%;
 	position: relative;
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.31) 100%), url(../img/about-us/left/builder1.5x.jpg);
 	background-repeat: no-repeat;
@@ -284,20 +284,22 @@ ul {
 	display: flex;
 	flex-direction: column;
 	width: 49%;
+	min-height: 100%;
 	justify-content: space-between;
 }
 
 .section-about-us__card {
 	display: flex;
 	align-items: center;
-	height: 295px;
+	height: 48%;
 	border: 1px solid #CACACA;
 }
 
 .section-about-us__card_img {
-	margin: 0px 50px 0px 57px;
-	width: 190px;
-	height: 165px;
+	margin-left:57px;
+	margin-right: 50px;
+	min-width: 190px;
+	min-height: 165px;
 }
 
 .section-about-us__card_img_top {
@@ -309,8 +311,8 @@ ul {
 }
 
 .section-about-us__card_content {
-	max-width: 452px;
-	height: 165px;
+	width: 90%;
+	/* max-height: 165px; */
 }
 
 .card_header {
@@ -413,7 +415,7 @@ ul {
 	width: 49%;
 	min-height: 460px;
 	background-size: 100% 100%;
-	background-image: url(../img/how-we-work/Rectangle-18-3x.jpg);
+	background-image: url(../img/how-we-work/Rectangle-4x.jpg);
 }
 
 
@@ -511,7 +513,7 @@ ul {
 }
 
 .footer-center {
-	width: 35%;
+	width: 40%;
 	padding-top: 50px;
 	/* margin: 50px 232px 0px 340px; */
 }
@@ -565,6 +567,20 @@ ul {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 2;
+}
+
+@media (max-width: 1920px) {
+	.section-hero {
+		background-image: url(../img/hero/low-angle-photo-of-balconies-2462015\ 1.jpg);
+	}
+
+	.section-about-us__bottom_left {
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.31) 100%), url(../img/about-us/left/builder.jpg);
+	}	
+
+	.section-how-we-work__bottom_right {
+		background-image: url(../img/how-we-work/Rectangle-18.jpg);
+	}
 }
 
 @media (max-width: 1024px) {
